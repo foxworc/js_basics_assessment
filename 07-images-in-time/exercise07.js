@@ -20,15 +20,55 @@
    */
 
 
-  /**
-   * this function adds an image to the page
-   * @param {String} name an image filename
-   */
+
+  //  let containerBoxImage = document.querySelector("#image-box");
+
+
+  //  * this function adds an image to the page
+  //  * @param {String} name an image filename
+  //  */
+
+
   function addImage(name) {
     var img = document.createElement('img');
     img.src = name;
     document.getElementById('image-box').appendChild(img);
   }
+
+  // getRandomInt function????
+
+  
+  myImgArray = ['cats.jpg', 'hugger.jpg', 'internet.jpg', 'jackson.jpg', "washington.jpg"]
+  
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max); //The maximum is exclusive and the minimum is inclusive
+  }
+
+  console.log(myImgArray[0])
+
+  // setTimeout(function(){
+  //   addImage(myImgArray[getRandomInt(5)])
+  // }, 2.5*1000)
+
+
+
+  function yourFunction(){
+    // do whatever you like here
+    document.getElementById('image-box').innerHTML=""
+    addImage(myImgArray[getRandomInt(5)])
+    setTimeout(yourFunction, 2500);
+}
+
+yourFunction();
+
+  // from previous file in this assignment
+//   setTimeout(function(){
+//     document.querySelector("#title").innerHTML = "Goodbye World"
+//     }, 3*1000)
+
+
+  // setTimeout(function(){myArray.}, 2.5*1000); // prints "one" after 2.5 seconds
 
   //your code here
 

@@ -12,8 +12,7 @@
   //create an empty array
   let yeahArray = [];
 
-  //loop through the linesArray and prepend lol 40x to each line
-  //before adding to the new line yeahArray
+  //loop through the linesArray and add the line and lol 40x the array
   for(let i=0; i < linesArray.length; i++){
     yeahArray.push(linesArray[i], 'lol'.repeat(40));
   }

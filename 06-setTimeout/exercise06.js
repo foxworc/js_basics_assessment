@@ -15,5 +15,27 @@
 
 //your code here
 
+
+
+// title.addEventListener("click")
+
+setTimeout(function(){
+    document.querySelector("#title").innerHTML = "Goodbye World"
+}, 3*1000)
+
+
+
+// or 
+
+
+// let title = document.querySelector("#title")
+
+// setTimeout(function(){
+//     title.innerHTML = "Goodbye World"
+//  }, 3*1000)
+
+
+
+
 })();
     

@@ -25,4 +25,40 @@
 
     //your code here
 
+        function fizzBuzz(maxValue){
+            let fizzBuzzString = ""; 
+            for(let i = 1; i <= maxValue; i++){
+            //or(let i = 1; i <= maxValue; i = i + 1){
+                
+            
+              
+            
+            if (i % 2 === 0 && i % 3 === 0)  {
+                fizzBuzzString = fizzBuzzString + "FizzBuzz, ";
+            } else if(i % 2 === 0){
+                fizzBuzzString = fizzBuzzString + "Fizz, ";
+                //fizzBuzzStting += "Fizz, " 
+            } else if (i % 3 ===0){
+                fizzBuzzString = fizzBuzzString + "Buzz,";
+            } else {
+                fizzBuzzString = fizzBuzzString + i + ", "
+                }
+
+            }
+
+            console.log(fizzBuzzString);
+        //or return fizzBuzzString;
+            }
+
+            fizzBuzz(12)
+
+
+
+
+
+
+
+          
 })();
+
+

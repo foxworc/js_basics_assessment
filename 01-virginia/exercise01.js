@@ -16,4 +16,38 @@
 
     //your code here
 
+   
+    
+
+
+
+
+
+///    use this below
+
+        let word = "Virginia"
+    
+        
+    
+        
+        let wordCount = (washingtonInfo.match(new RegExp(word, "g")) || []).length;
+        console.log(wordCount)
+    
+    
+    
+       
+
+// easier way below
+
+// let word_count = washingtonInfo.match(/Virginia/g).length
+
+// console.log(word_count)
+
+
+
+////
+
+
+
+
 })();

@@ -11,4 +11,25 @@
 
     //your code here
 
+//     // **
+// 
+
+// below from exercise 2
+
+// split our string into an array of words
+// loop through the array of words and console.log each word
+    function printOneWord(gAddress){
+        let wordArray = gAddress.split(' ')
+        console.log(wordArray)
+        for (let wordindexvariable = 0; wordindexvariable <= wordArray.length; wordindexvariable++){
+            console.log(wordArray[wordindexvariable])
+        }
+    }
+    
+    printOneWord(gAddress)
+
+
+
+    
+
 })();
